@@ -16,16 +16,16 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.http import HttpResponse
-from Main.views import test, sign_up, order
-from Main.page import page, vue
+from Main.views import test, sign_up, order, find_parking
+from Main.page import page, order_info
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'test', test),
     url(r'sign-up', sign_up),
-    url(r'order', order),
-    url(r'page', page),
-    url(r'vue', vue),
+    url(r'^order$', order),
+    url(r'find-parking', find_parking),
+    url(r'page', order_info),
 ]
 
 

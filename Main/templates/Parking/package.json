@@ -12,7 +12,10 @@
   "dependencies": {
     "mint-ui": "^2.2.9",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-calendar-picker": "^1.2.1",
+    "vue-router": "^3.0.1",
+    "vue2-calendar": "github:icai/vue2-calendar",
+    "vuejs-countdown": "^0.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
