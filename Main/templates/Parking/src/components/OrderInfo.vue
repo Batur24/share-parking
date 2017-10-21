@@ -49,8 +49,8 @@ export default {
       now: Math.trunc((new Date()).getTime() / 1000),
       location: "华贵商场停车场",
       price: "",
-      orderTime: date.getFullYear() + "-" + date.getMonth() + "-" + date.getDay()
-        + " " + date.getHours() + ":" + date.getMinutes()
+      orderTime: date.getFullYear() + "-" + (parseInt(date.getMonth()) + 1) + "-"
+         + date.getDate() + " " + date.getHours() + ":" + date.getMinutes()
     };
   },
   created() {
