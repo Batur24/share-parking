@@ -21,7 +21,7 @@ from Main.page import page, order_info
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'test', test),
+    url(r'^$', test),
     url(r'sign-up', sign_up),
     url(r'^order$', order),
     url(r'find-parking', find_parking),
