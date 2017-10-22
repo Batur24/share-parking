@@ -1,12 +1,13 @@
 
 <template>
   <div>
+      <img class="image" src="../assets/p4.png" ></img>
 
       <router-link :to="{ path: '/landlord'}">
-        <mt-button class="btn">取消</mt-button>
+        <mt-button class="btn">Cancel</mt-button>
       </router-link>
       <router-link :to="{ path: '/landlord'}">
-        <mt-button class="btn">确认</mt-button>
+        <mt-button class="btn">Confirm</mt-button>
       </router-link>
   </div>
 </template>

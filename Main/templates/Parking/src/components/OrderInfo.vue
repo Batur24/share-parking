@@ -1,24 +1,24 @@
 <template>
   <div class="hello">
     <div id="time">
-      <p>剩余可用时间</p>
+      <p>Remaining Time</p>
       <p id="countDown">  {{ hours }}:{{ minutes }}:{{ seconds }}</p>
     </div>
 
     <div>
-      <mt-field label="停车场" placeholder="输入停车场位置" v-model="location"></mt-field>
-      <mt-field label="预定时间" placeholder="选择预定时间" v-model="orderTime"
+      <mt-field label="Parking Area" placeholder="Input Parking Area" v-model="location"></mt-field>
+      <mt-field label="Order Time" placeholder="Select Order Time" v-model="orderTime"
       @click.native="open('picker')">
       </mt-field>
-      <mt-field label="总价" placeholder="输入价格" v-model="price"></mt-field>
+      <mt-field label="Price" placeholder="Input Price" v-model="price"></mt-field>
       <!-- <mt-cell id="map" title="地图导航" is-link></mt-cell> -->
     </div>
 
     <div id="operation">
       <router-link :to="{ path: '/order-extend'}">
-        <mt-button id="keep-order">延长预定</mt-button>
+        <mt-button id="keep-order">Extend Booking</mt-button>
       </router-link>
-      <mt-button id="cancel-order">取消订单</mt-button>
+      <mt-button id="cancel-order">Cancel Order</mt-button>
     </div>
 
     <div>

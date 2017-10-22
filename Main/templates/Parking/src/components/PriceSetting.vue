@@ -1,7 +1,7 @@
 
 <template>
   <div>
-      <h2>价格趋势</h2>
+      <h2>Price Trending</h2>
       <img class="image" src="../assets/p3.png" ></img>
 
       <mt-range
@@ -13,10 +13,10 @@
       </mt-range>
 
       <router-link :to="{ path: '/landlord'}">
-        <mt-button class="btn">取消</mt-button>
+        <mt-button class="btn">Cancel</mt-button>
       </router-link>
       <router-link :to="{ path: '/landlord'}">
-        <mt-button class="btn">确认</mt-button>
+        <mt-button class="btn">Confirm</mt-button>
       </router-link>
   </div>
 </template>

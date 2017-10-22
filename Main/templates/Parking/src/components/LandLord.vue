@@ -5,10 +5,10 @@
       <img class="image" src="../assets/p2.png" ></img>
 
       <router-link :to="{ path: '/price-setting'}">
-        <mt-button class="btn">价格设定</mt-button>
+        <mt-button class="btn">Price Setting</mt-button>
       </router-link>
       <router-link :to="{ path: '/datetime-setting'}">
-        <mt-button class="btn">时间设定</mt-button>
+        <mt-button class="btn">Time Setting</mt-button>
       </router-link>
   </div>
 </template>

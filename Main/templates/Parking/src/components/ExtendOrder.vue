@@ -1,11 +1,11 @@
 <template>
   <div>
-      <mt-field id="extend" label="延长时间"></mt-field>
-      <mt-field id="price" label="总价"></mt-field>
-      <mt-cell id="pay" title="支付方式" @click.native="choosePayment" :value="payment">
+      <mt-field id="extend" label="Remaining Time"></mt-field>
+      <mt-field id="price" label="Price"></mt-field>
+      <mt-cell id="pay" title="Payment" @click.native="choosePayment" :value="payment">
       </mt-cell>
 
-      <mt-button id="confirm">确认</mt-button>
+      <mt-button id="confirm">Confirm</mt-button>
 
       <mt-picker v-show="selectPay" id="picker" :slots="slots" @change="changePayment"></mt-picker>
   </div>
@@ -64,6 +64,10 @@ export default {
 #picker {
   position: absolute;
   bottom: 0;
+  width: 100%;
+}
+
+.mint-field .mint-cell-title {
   width: 100%;
 }
 
